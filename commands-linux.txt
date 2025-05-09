@@ -1,3 +1,6 @@
+
+text newwwwwwwwwwwwave
+
 cat = mostrar contenido archivo en terminal
 head = muestra primeras 10 lineas de archivo en terminal
 head index.txt -n 20 = muestra primeras 20 lineas en terminal
