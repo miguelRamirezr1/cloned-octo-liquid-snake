@@ -1,0 +1,54 @@
+cat = mostrar contenido archivo en terminal
+head = muestra primeras 10 lineas de archivo en terminal
+head index.txt -n 20 = muestra primeras 20 lineas en terminal
+tail = muestra ultimas 10 lineas de archivo en terminal
+tail index.txt -n 20 = muestra ultimas 20 lineas en terminal
+less index.txt = muestra contenido recursivo, con capacidad de subrayar palabras que busquemos
+type "type cd": ver lo que hace un comando, "cd es una orden interna del intérprete de ordenes"
+alias = crear un alias de un comando (alias l="ls -lh")
+guardamos aliases con variables de entorno
+##VER INFORMACION##
+info
+man
+comando --help
+help comando
+whatis
+##WILDCARDS##
+comodines para listar archivos con misma extensión
+ls *.txt = mostrar todo lo que sea un archivo text
+ls file* = mostrar todo lo que tenga nombre file
+ls file? = mostrar contenido que tenga file y su extensión después
+arch1.txt arch2.txt arch3.txt
+ls arch?.txt
+
+ls -d [[:upper:]]* Mostrar todo lo que tenga mayuscula
+ls -d [[:lower:]]* = Mostrar todo lo que tenga minuscula
+ls -d [af]* = todos los archivos que empiezen con "a" y con "f"
+
+ls *.jpeg > archivoDeVarios.txt
+si archivoDeVarios.txt no existe el lo crea
+tree > archivoDeVarios.txt
+sobreescribe previo contenido del archivo
+ls *jpeg >> archivoDeVarios.txt
+añade nuevo contenido al archivo en vez de sobreescribirlo
+
+ls cualquiercosa 2> error.txt
+si el comando presenta un error, guarde el mensaje a error.txt
+
+ls cualquiercosa >> archivoDeVarios.txt 2>&1
+guarda output no importa si es correcto o incorrecto sin sobreescribir (formalmente es un log)
+
+##Mostrar mensajes en la terminal#
+echo "Hola Taller SO"
+echo "Hola Taller SO" > archivoDeVarios.txt
+sirven para indicar resultado positivo o negativo en la terminal por ejemplo en un script
+
+
+
+
+
+
+
+
+
+
